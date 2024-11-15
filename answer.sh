@@ -7,12 +7,20 @@
 
 
 # 3. カレントディレクトリから`~/geekationWorkspace`ディレクトリまで移動してください。(すでにオリエンテーションで作成済み)
-
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2) (feature)
+$ cd geekationWorkspace
 
 # 4. `LinuxCommandPractice`というディレクトリを作成して、`LinuxCommandPractice`に移動してください。
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace (feature)
+$ mkdir LinuxCommandPractice
 
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace (feature)
+$ cd LinuxCommandPractice
 
 # 5. カレントディレクトリのパスを表示してください。
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (main)
+$ pwd
+/c/Users/u5073/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice
 
 
 # 6. 次に、下の画像のようにGithubで`LinuxCommandPractice`という名前のリポジトリを作成してください。
@@ -28,50 +36,77 @@ $ git push -u origin main
 # ここまでGithubリポジトリ作成時の初期コマンド
 
 # 7. `LinuxCommandPractice`ディレクトリに`.git`ディレクトリが表示されていることを確認してください。
-
+$ ls -la
+total 5
+drwxr-xr-x 1 u5073 197609  0 10月 22 16:57 ./
+drwxr-xr-x 1 u5073 197609  0 10月 21 13:37 ../
+drwxr-xr-x 1 u5073 197609  0 10月 21 13:47 .git/
+drwxr-xr-x 1 u5073 197609  0 10月 22 17:02 practice_dir_1/
+-rw-r--r-- 1 u5073 197609 45 10月 21 13:44 README.md
 
 # 8. `LinuxCommandPractice`ディレクトリ内に`practice_dir_1`ディレクトリを作成してください。
-
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (main)
+$ mkdir practice_dir_1
 
 # 9. `LinuxCommandPractice`ディレクトリ内に`practice_dir_1`ディレクトリが作成されていることを確認(表示)してください。
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (main)
+$ cd practice_dir_1
 
+cdで移動できたからという所
+└本来はlsを利用して確認
 
 # 10. `LinuxCommandPractice`ディレクトリ内から**移動せずに**、`practice_dir_1`内に`practice_dir_2`というディレクトリを作成してください。**但し、相対パスを使用してください。**
-
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (main)
+$ mkdir practice_dir_1/practice_dir_2   
 
 # 11. `LinuxCommandPractice`ディレクトリ内から**移動せずに**、`practice_dir_1`内に`practice_dir_2`ディレクトリが作成されていることを確認(表示)してください。**但し、相対パスを使用してください。**
-
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (main)
+$ ls ./practice_dir_1
+practice_dir_2/
 
 # 12. `LinuxCommandPractice`ディレクトリ内から**移動せずに**、`./practice_dir_1/practice_dir_2`ディレクトリ内に`practice_file1.txt`、`practice_file2.txt`というファイルを**一回のコマンドで**作成してください。**但し、相対パスを使用してください。**
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (main)
+$ touch ./practice_dir_1/practice_dir_2/practice_file1.txt ./practice_dir_1/practice_dir_2/practice_file2.txt
 
 
 # 13 `practice_dir_2`に移動してください。**但し、相対パスを使用してください。**
-
+ u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (main)
+$ cd ./practice_dir_1/practice_dir_2
 
 # 14. `practice_file1.txt`を2つ上の階層のディレクトリ(`LinuxCommandPractice`)へ**移動**してください。**但し、相対パスを使用してください。**
-
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (main)
+$ mv ./practice_dir_1/practice_dir_2/practice_file1.txt ./
 
 # 15. `practice_file2.txt`を2つ上の階層のディレクトリ(`LinuxCommandPractice`)へ**コピー**してください。**但し、相対パスを使用してください。**
-
+$ cp ./practice_dir_1/practice_dir_2/practice_file2.txt ./
 
 # 16. カレントディレクトリの`practice_file2.txt`を削除してください。**但し、相対パスを使用してください。**
-
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (main)
+$ rm ./practice_dir_1/practice_dir_2/practice_file2.txt
 
 # 17. `practice_file2.txt`が削除されていることを確認(表示)してください。
-
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (main)
+$ ls ./practice_dir_1/practice_dir_2 
 
 # 18. 2つ上の階層のディレクトリ(`LinuxCommandPractice`)へ移動してください。**但し、相対パスを使用してください。**
-
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice/practice_dir_1/practice_dir_2 (main)    
+$ cd../..  
 
 # 19. `practice_dir_2`ディレクトリを削除してください。**但し、相対パスを使用してください。**
-
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (main)
+$ rm ./practice_dir_1/practice_dir_2  
 
 # 20. `vi`または`vim`を用いて、カレントディレクトリにある`practice_file1.txt`に`I'm good at Linux commands!`と書き込んでください。
-
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新し いフォルダー (2) (feature)
+$ vim practice_file1.txt
 
 # 21. `practice_file1.txt`に書き込んだ内容を出力してください。
+u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新し いフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (linux-command-practice)
+$ cat practice_file1.txt
+I'm good at Linux commands!
 
 
+以下いらないもの:
 u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2) (feature)
 $ cd geekationWorkspace
 bash: cd: geekationWorkspace: No such file or directory
