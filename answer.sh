@@ -335,3 +335,4 @@ Switched to a new branch 'linux-command-practice'
 
 u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (linux-command-practice)
 $
+j
