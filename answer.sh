@@ -4,7 +4,7 @@
 
 # 1. ターミナル/Gitbashを開いてください。(ここはコマンド実行は不要です。)
 # 2. ホームディレクトリに移動してください。(すでにホームディレクトリにいてもコマンドを実行して下さい)
-
+$ cd ~
 
 # 3. カレントディレクトリから`~/geekationWorkspace`ディレクトリまで移動してください。(すでにオリエンテーションで作成済み)
 u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2) (feature)
@@ -78,8 +78,7 @@ u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekation
 $ mv ./practice_dir_1/practice_dir_2/practice_file1.txt ./
 
 # 15. `practice_file2.txt`を2つ上の階層のディレクトリ(`LinuxCommandPractice`)へ**コピー**してください。**但し、相対パスを使用してください。**
-$ cp ./practice_dir_1/practice_dir_2/practice_file2.txt ./
-
+$ cp ./practice_file2.txt ../..
 # 16. カレントディレクトリの`practice_file2.txt`を削除してください。**但し、相対パスを使用してください。**
 u5073@DESKTOP-CUQGNBU MINGW64 ~/Documents/新しいフォルダー (2)/geekationWorkspace/LinuxCommandPractice/LinuxCommandPractice (main)
 $ rm ./practice_dir_1/practice_dir_2/practice_file2.txt
